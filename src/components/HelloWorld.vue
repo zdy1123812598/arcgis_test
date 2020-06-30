@@ -88,6 +88,13 @@
         >
           map
         </a>
+      </li><li>
+        <a
+          href="#/sceneView"
+          target="_blank"
+        >
+          sceneView
+        </a>
       </li>
     </ul>
   </div>
