@@ -19,6 +19,14 @@
           ViewshedAnalysis
         </a>
       </li>
+      <li>
+        <a
+          href="/static/LoadWebScene.html"
+          target="_blank"
+        >
+          LoadWebScene
+        </a>
+      </li>
     </ul>
   </div>
 </template>

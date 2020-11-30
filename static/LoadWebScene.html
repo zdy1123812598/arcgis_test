@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,
+        body,
+        #viewDiv {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/css/main.css">
+    <script src="https://js.arcgis.com/4.16"></script>
+
+    <script>
+        require([
+            "esri/config", "esri/Map",
+            "esri/views/SceneView","esri/WebScene","esri/Ground",
+            "esri/layers/ElevationLayer",
+            "dojo/domReady!"
+        ],function (esriConfig,Map,SceneView,WebScene,Ground,ElevationLayer) {
+            esriConfig.portalUrl="https://gis-server.cbim.cn/geoscene";
+
+          var map = new WebScene({
+                portalItem:{
+                    id:"9fc83b997ff14384a783eb5976b8aef5"
+                }
+				
+            });
+		
+            var view =new SceneView({
+              	map:map,
+                container:"viewDiv"
+            });
+            
+			view.qualitySettings.memoryLimit = 3072;
+			view.when(function () {         
+          map.ground.surfaceColor = "#004C73"; 
+        });
+			
+			
+        })
+    </script>
+
+
+</head>
+<body>
+<div id="viewDiv"></div>
+</body>
+</html>
