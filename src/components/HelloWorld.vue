@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>arcgis_test</h2>
+    <h2>arcgis-test</h2>
     <ul>
       <li>
         <a

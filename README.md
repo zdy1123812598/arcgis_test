@@ -1,4 +1,4 @@
-# arcgis_test
+# arcgis-test
 
 > A Vue.js project
 

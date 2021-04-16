@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>LoadWebScene</title>
     <style>
         html,
         body,
@@ -29,20 +29,20 @@
                 portalItem:{
                     id:"9fc83b997ff14384a783eb5976b8aef5"
                 }
-				
+
             });
-		
+
             var view =new SceneView({
               	map:map,
                 container:"viewDiv"
             });
-            
+
 			view.qualitySettings.memoryLimit = 3072;
-			view.when(function () {         
-          map.ground.surfaceColor = "#004C73"; 
+			view.when(function () {
+          map.ground.surfaceColor = "#004C73";
         });
-			
-			
+
+
         })
     </script>
 

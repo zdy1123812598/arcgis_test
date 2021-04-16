@@ -2,9 +2,9 @@
 ## 使用node做为镜像
 #FROM node
 ## 在容器中创建该目录
-#RUN mkdir -p /home/arcgis_test
+#RUN mkdir -p /home/arcgis-test
 ## 设置容器的工作目录为该目录
-#WORKDIR /home/arcgis_test
+#WORKDIR /home/arcgis-test
 ## 向外提供3000端口
 #EXPOSE 3000
 ## 容器创建完成后执行的命令
